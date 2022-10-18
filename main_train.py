@@ -13,9 +13,9 @@ import pandas as pd
 import torch.nn as nn
 from datasets import NeoadjuvantImmunotherapy_Dataset
 from torch.utils.data import Dataset, DataLoader
-from utils.utils import get_result_binary
-from utils.utils import adjust_learning_rate
-from networks.shufflenetv2 import shufflenet_v2_x0_5
+from utils import get_result_binary
+from utils import adjust_learning_rate
+from shufflenetv2 import shufflenet_v2_x0_5
 
 def test_model(model,loader,criterion,criterion2,num_class):
     model.eval()
